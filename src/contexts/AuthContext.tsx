@@ -43,8 +43,8 @@ export function AuthContextProvider(props: AuthContextProviderType) {
 
   async function singInWithGoogle() {
     const provider = new firebase.auth.GoogleAuthProvider();
-
     const result = await auth.signInWithPopup(provider);
+    firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION);
 
     if (result.user) {
       const { displayName, photoURL, uid } = result.user
