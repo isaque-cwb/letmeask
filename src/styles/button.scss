@@ -18,6 +18,13 @@
   img{
     margin-right: 8px; 
   }
+
+  &.outlined{
+    background: #fff;
+    border: 1px solid #a808ff;
+    color: #a808ff;
+  }
+
   &:not(:disabled):hover{
     filter:brightness(0.9)
   }
