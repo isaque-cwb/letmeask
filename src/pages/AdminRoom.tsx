@@ -3,9 +3,7 @@ import { Button } from '../components/Button';
 import { RoomCode } from '../components/RoomCode';
 import '../styles/room.scss';
 import { useParams } from 'react-router-dom'
-import { FormEvent, useEffect, useState } from 'react';
-import { useAuth } from '../hooks/useAuth';
-import { database } from '../service/firebase';
+//import { useAuth } from '../hooks/useAuth';
 import { Question } from '../components/Question';
 import { useRoom } from '../hooks/useRoom';
 
@@ -17,36 +15,11 @@ type RoomParams = {
 }
 
 export function AdminRoom() {
-  const { user } = useAuth();
+  //const { user } = useAuth();
   const params = useParams<RoomParams>();
   const roomId = params.id;
-  const [newQuestion, setNewQuestion] = useState('');
   const { questions, title } = useRoom(roomId);
 
-
-  async function handleSendQuestion(event: FormEvent) {
-    event.preventDefault();
-
-    if (newQuestion.trim() === '') {
-      return;
-    }
-    if (!user) {
-      throw new Error('Você precisa estar logado!')
-    }
-
-    const question = {
-      content: newQuestion,
-      author: {
-        name: user.name,
-        avatar: user.avatar,
-
-      },
-      isHighlighted: false,
-      isAnswered: false,
-    }
-    await database.ref(`rooms/${roomId}/questions`).push(question)
-    setNewQuestion('')
-  };
 
 
   return (
