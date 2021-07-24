@@ -4,7 +4,7 @@
   height: 100vh;
 
   aside{
-    flex: 7;
+    flex: 1;
     background: #835afd;
     color: #fff;
     display: flex;
@@ -31,8 +31,8 @@
   }
 
   main{
-    flex: 8;
-    padding: 0px 32px;
+    flex: 1;
+    padding: 10px 32px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,6 +46,7 @@
     max-width: 320px;
     align-items: stretch;
     text-align: center;
+    
     
     > img {
       align-self: center;
@@ -133,4 +134,64 @@
 
     }
   }
+}
+
+@media(max-width: 376px){
+
+  
+  #root{
+    display: flex;
+    
+  }
+  #page-auth{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  #page-auth aside{
+   padding: 30px 30px
+  }
+  #page-auth aside img{
+    width: 100%;
+    height: 100%;
+   }
+
+
+  #page-auth aside strong{
+    font-size: 30px;
+  }
+  #page-auth aside p{
+    font-size: 20px;
+  }
+  
+
+
+}
+
+@media(max-width: 769px){
+
+  
+  #root{
+    display: flex;
+    
+  }
+ 
+  #page-auth aside{
+   padding: 30px 30px
+  }
+  #page-auth aside img{
+    width: 100%;
+    height: 100%;
+   }
+
+
+  #page-auth aside strong{
+    font-size: 30px;
+  }
+  #page-auth aside p{
+    font-size: 20px;
+  }
+  
+
+
 }
