@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 120px 80px;
+    align-items: center;
 
   }
 
@@ -135,6 +136,33 @@
     }
   }
 }
+@media(max-width: 1025px){
+  #page-auth{
+    aside{
+      strong{
+        text-align: center;
+        
+      }
+      p{
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media(max-width: 769px){
+  #page-auth{
+    aside{
+      strong{
+        text-align: center;
+        
+      }
+      p{
+        text-align: center;
+      }
+    }
+  }
+}
 
 @media(max-width: 426px){
 
@@ -197,6 +225,34 @@
 
 }
 
+@media(max-height: 1025px){
+  #page-auth{
+    aside{
+      strong{
+        text-align: center;
+        
+      }
+      p{
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media(max-height: 769px){
+  #page-auth{
+    aside{
+      strong{
+        text-align: center;
+        
+      }
+      p{
+        text-align: center;
+      }
+    }
+  }
+}
+
 @media(max-height: 412px) {
   #page-auth{
     
@@ -242,3 +298,5 @@
 
   
 }
+
+
