@@ -136,62 +136,109 @@
   }
 }
 
-@media(max-width: 376px){
+@media(max-width: 426px){
 
   
-  #root{
-    display: flex;
-    
-  }
+  
   #page-auth{
-    display: flex;
+    //display: flex;
     flex-direction: column;
-    
-  }
-  #page-auth aside{
-   padding: 30px 30px
-  }
-  #page-auth aside img{
-    width: 100%;
-    height: 100%;
-   }
 
-
-  #page-auth aside strong{
-    font-size: 30px;
+    aside{
+      padding: 30px 30px;
+      max-height: 50%;
+      align-items: center;
+      strong{
+       font-size: 20px;
+       margin-top: 10px;
+       line-height: 15px;
+       text-align: center;
+      }
+   
+      p{
+      
+       font-size: 13px;
+       margin-top: 5px;
+       text-align: center;
+       
+      }
+   
+      img{
+        width: 100%;
+        height: 100%;
+        max-width: 58%;
+        margin-top: 5px;
+        line-height:10px;
+      }
+     } 
+     .create-room{
+      margin-top: 10px;
+      height: 5vh;
+    }
+    .main-content{
+     
+      button{
+        height: 5vh;
+        margin-top: 10px;
+      }
+      h2{
+        margin-top: 10px;
+        font-size: 20px;
+      }
+      form{
+        input{
+          height: 5vh;
+        }
+      }
+     
+    }
   }
-  #page-auth aside p{
-    font-size: 20px;
-  }
-  
 
 
 }
 
-@media(max-width: 769px){
+@media(max-height: 412px) {
+  #page-auth{
+    
+    .create-room{
+      margin-top: 10px; 
+    }
 
-  
-  #root{
-    display: flex;
+    .main-content{
+      h2{
+        margin-top: 10px
+      }
+    }
+
+    aside{
+      padding: 30px 30px;
+      
+      align-items: center;
+      strong{
+       font-size: 20px;
+       margin-top: 10px;
+       line-height: 25px;
+       text-align: center;
+      }
+   
+      p{
+       font-size: 13px;
+       margin-top: 5px;
+       text-align: center;
+       line-height: 15px;
+      }
+   
+      img{
+        width: 100%;
+        height: 100%;
+        max-width: 58%;
+        margin-top: 5px;
+        line-height:10px;
+      }
+     } 
     
   }
- 
-  #page-auth aside{
-   padding: 30px 30px
-  }
-  #page-auth aside img{
-    width: 100%;
-    height: 100%;
-   }
-
-
-  #page-auth aside strong{
-    font-size: 30px;
-  }
-  #page-auth aside p{
-    font-size: 20px;
-  }
   
 
-
+  
 }
